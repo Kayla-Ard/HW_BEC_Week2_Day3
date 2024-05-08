@@ -21,4 +21,4 @@ def last_word(st):
     new_string = st.strip()
     word = new_string.split()
     return len(word[-1])
-print(last_word(“Hello World”))
+print(last_word("Hello World"))
