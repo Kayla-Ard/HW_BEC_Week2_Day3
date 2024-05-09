@@ -8,11 +8,11 @@
 # "Itinerary 1: Alice - From New York to London
 #  Itinerary 2: Bob - From Tokyo to San Francisco"
 
-def flight_itn():
-    flight_info = [("Alice", "New York", "London"), ("Bob", "Tokyo", "San Francisco")]
-    for index, flight_info in enumerate(flight_info):
-        print(f'Itinerary {index + 1}: {flight_info[0]} - From {flight_info[1]} to {flight_info[2]}')
-flight_itn()
+flight_info = [("Alice", "New York", "London"), ("Bob", "Tokyo", "San Francisco")]
+def flight_itn(flight):
+    for index, flight in enumerate(flight):
+        print(f'Itinerary {index + 1}: {flight[0]} - From {flight[1]} to {flight[2]}')
+flight_itn(flight_info)
 
 
 
@@ -26,8 +26,8 @@ flight_itn()
 
 library_books = [("1984", "George Orwell"), ("Brave New World", "Aldous Huxley")]
 def library_system(library):
-    for book, title in library_books:
-        if library[0] == book:
+    for title, author in library_books:
+        if library[0] == title:
             print("That book is already in the library!")
             return library_books
         

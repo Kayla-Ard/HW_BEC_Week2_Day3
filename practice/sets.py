@@ -123,7 +123,7 @@ print(new_set)
 # Intersection
 # find the commonality between two sets
 # which items are the same
-# order of sets doesnt matter
+# order of sets doesn't matter
 set1 = {"Alice", "Bob", "Charlie"}
 set2 = {"David", "Emma", "Charlie", "bob"}
 mutual_friends = set1.intersection(set2)
